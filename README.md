@@ -19,10 +19,5 @@ ANSWER:  select NAME from CITY where POPULATION > 120000 and COUNTRYCODE = 'USA'
 ###### Query all columns (attributes) for every row in the CITY table. The CITY table is described as follows:
 ![City Table](<SQL-CITY.jpg>)
 ```sql
-ANSWER:  /*
-    Enter your query here and follow these instructions:
-    1. Please append a semicolon ";" at the end of the query and enter your query in a single line to avoid error.
-    2. The AS keyword causes errors, so follow this convention: "Select t.Field From table1 t" instead of "select t.Field From table1 AS t"
-    3. Type your code immediately after comment. Don't leave any blank line.
-*/SELECT * FROM CITY;
+ANSWER: SELECT * FROM CITY;
 ```
