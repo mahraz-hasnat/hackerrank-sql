@@ -21,3 +21,18 @@ ANSWER:  select NAME from CITY where POPULATION > 120000 and COUNTRYCODE = 'USA'
 ```sql
 ANSWER: SELECT * FROM CITY;
 ```
+----
+### Select by ID
+###### Query all columns for a city in CITY with the ID 1661. The CITY table is described as follows:
+![City Table](<SQL-CITY.jpg>)
+```sql
+ANSWER: select * from CITY where ID=1661;
+```
+
+----
+### japanese cities attributes
+###### Query all attributes of every Japanese city in the CITY table. The COUNTRYCODE for Japan is JPN. The CITY table is described as follows:
+![City Table](<SQL-CITY.jpg>)
+```sql
+ANSWER: select * from CITY where COUNTRYCODE = 'JPN';
+```
