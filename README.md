@@ -43,6 +43,14 @@ ANSWER: select * from CITY where COUNTRYCODE = 'JPN';
 ```sql
 ANSWER: select CITY , STATE from STATION;
 ```
+
+----
+### Weather Observation Station 3
+###### Query a list of CITY names from STATION for cities that have an even ID number. Print the results in any order, but exclude duplicates from the answer The STATION table is described as follows:
+![Station Table](<sql-station.jpg>)
+```sql
+ANSWER: select distinct CITY from STATION where mod(ID,2)=0 order by CITY asc;
+```
 ----
 ### Weather Observation Station 5
 ###### Query the two cities in STATION with the shortest and longest CITY names, as well as their respective lengths (i.e.: number of characters in the name). If there is more than one smallest or largest city, choose the one that comes first when ordered alphabetically. The STATION table is described as follows:
